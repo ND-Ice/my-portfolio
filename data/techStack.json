@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "React Js",
+    "category": "Front-End",
+    "logo": "/images/react-js-icon.png"
+  },
+  {
+    "id": 2,
+    "title": "HTML 5",
+    "category": "Front-End",
+    "logo": "/images/html-5-icon.png"
+  },
+  {
+    "id": 3,
+    "title": "CSS 3",
+    "category": "Front-End",
+    "logo": "/images/css-3-icon.png"
+  },
+  {
+    "id": 4,
+    "title": "Next Js",
+    "category": "Front-End",
+    "logo": "/images/next-js-icon.png"
+  },
+  {
+    "id": 5,
+    "title": "Tailwind CSS",
+    "category": "Front-End",
+    "logo": "/images/tailwind-css-icon.png"
+  },
+  {
+    "id": 6,
+    "title": "Redux",
+    "category": "Front-End",
+    "logo": "/images/redux-icon.png"
+  },
+  {
+    "id": 7,
+    "title": "Styled Components",
+    "category": "Front-End",
+    "logo": "/images/styled-components-icon.png"
+  },
+  {
+    "id": 8,
+    "title": "Node Js",
+    "category": "Back-End",
+    "logo": "/images/node-js-icon.png"
+  },
+  {
+    "id": 9,
+    "title": "Express Js",
+    "category": "Back-End",
+    "logo": "/images/express-js-icon.png"
+  },
+  {
+    "id": 10,
+    "title": "Mongo DB",
+    "category": "Back-End",
+    "logo": "/images/mongo-db-icon.png"
+  },
+  {
+    "id": 11,
+    "title": "Git",
+    "category": "Others",
+    "logo": "/images/git-icon.png"
+  },
+  {
+    "id": 12,
+    "title": "GitHub",
+    "category": "Others",
+    "logo": "/images/github-icon.png"
+  },
+  {
+    "id": 13,
+    "title": "BitBucket",
+    "category": "Others",
+    "logo": "/images/bitbucket-icon.png"
+  },
+  {
+    "id": 14,
+    "title": "JavaScript",
+    "category": "Others",
+    "logo": "/images/javascript-icon.png"
+  }
+]
