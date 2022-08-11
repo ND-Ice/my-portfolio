@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 
 import EducationCard from "../card/EducationCard";
 import techStacks from "../../data/techStack.json";
@@ -6,7 +6,7 @@ import TechStackCard from "../card/TechStackCard";
 
 export default function ProfileSection() {
   return (
-    <Box py={10} bg="dark">
+    <Box py={10}>
       <Box maxW="900px" m="auto">
         <Heading
           fontWeight="extrabold"
@@ -21,12 +21,9 @@ export default function ProfileSection() {
         <Text
           fontSize="2xl"
           textAlign="justify"
-          letterSpacing={1}
-          my={5}
-          color="light"
-          lineHeight={1.75}
+          color={useColorModeValue("dark", "light")}
         >
-          Hi, I&apos;m
+          Hi, I am
           <Text textTransform="uppercase" as="span" color="accent.base">
             {" "}
             Joshua Dela Cruz{" "}

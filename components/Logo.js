@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 
 export default function Logo() {
   return (
@@ -7,15 +7,15 @@ export default function Logo() {
         size="md"
         textTransform="uppercase"
         letterSpacing={1}
-        color="light"
+        color={useColorModeValue("dark", "light")}
       >
-        dlc
+        HIRE ME
       </Heading>
       <Text
         fontSize="sm"
         letterSpacing={1}
         textTransform="uppercase"
-        color="light"
+        color={useColorModeValue("dark", "light")}
       >
         Front End Developer
       </Text>

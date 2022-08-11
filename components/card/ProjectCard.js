@@ -1,6 +1,14 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
-import { Badge, Box, Flex, Heading, Button, Text } from "@chakra-ui/react";
+import {
+  Badge,
+  Box,
+  Flex,
+  Heading,
+  Button,
+  Text,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import NextLink from "next/link";
 
 export default function ProjectCard({ project }) {
@@ -31,7 +39,7 @@ export default function ProjectCard({ project }) {
           />
         </Box>
       )}
-      <Heading size="md" color="light" mb={5}>
+      <Heading size="md" color={useColorModeValue("dark", "light")} mb={5}>
         {projectTitle}
       </Heading>
       <Text color="gray" textAlign="justify">

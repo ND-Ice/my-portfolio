@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
 export default function EducationCard({
@@ -8,16 +8,25 @@ export default function EducationCard({
 }) {
   return (
     <Box mt={5}>
-      <Heading fontWeight="extrabold" letterSpacing={1} size="md" color="light">
+      <Heading
+        fontWeight="extrabold"
+        letterSpacing={1}
+        size="md"
+        color={useColorModeValue("dark", "light")}
+      >
         {schoolYear}
       </Heading>
-      <Text fontSize="xl" color="light" letterSpacing={1}>
+      <Text
+        fontSize="xl"
+        color={useColorModeValue("dark", "light")}
+        letterSpacing={1}
+      >
         {schoolName}
       </Text>
       <Text
         textTransform="uppercase"
         fontSize="md"
-        color="gray"
+        color={useColorModeValue("dark", "gray")}
         letterSpacing={1}
       >
         {schoolLocation}

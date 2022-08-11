@@ -5,7 +5,7 @@ import ProjectCard from "../card/ProjectCard";
 
 export default function ProjectSection() {
   return (
-    <Box minH="100vh" py={10} bg="blackAlpha.300">
+    <Box minH="100vh" py={10}>
       <Box maxW="900px" m="auto">
         <Heading
           fontWeight="extrabold"
