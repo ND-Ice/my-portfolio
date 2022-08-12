@@ -44,7 +44,7 @@ export default function ProfileSection() {
           engineer.
         </Text>
 
-        <Flex direction={{ base: "column", md: "row" }} gap={20} mt={10}>
+        <Flex direction={{ base: "column", lg: "row" }} gap={20} mt={10}>
           <Box>
             <Heading
               fontWeight="extrabold"
@@ -84,12 +84,14 @@ export default function ProfileSection() {
               MY TOOLS
             </Heading>
             <Box
-              gap={2}
+              gap={[2, 5]}
               display="grid"
               justifyItems="center"
               gridTemplateColumns={{
                 base: "repeat(4,1fr)",
-                md: "repeat(5,1fr)",
+                sm: "repeat(5,1fr)",
+                md: "repeat(9,1fr)",
+                lg: "repeat(5,1fr)",
               }}
             >
               {techStacks.map((stack) => (
