@@ -1,27 +1,29 @@
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
-import {
-  Box,
-  Flex,
-  IconButton,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Flex, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 
 import Logo from "./Logo";
 import DarkModeToggle from "./DarkModeToggle";
 
 export default function Navbar() {
   return (
-    <Box
+    <Flex
       as="nav"
       pos="sticky"
       top={0}
-      p={5}
+      alignItems="center"
+      h="10vh"
       backdropFilter="blur(10px)"
       zIndex={1000}
       shadow="sm"
+      px={5}
     >
-      <Flex align="center" justify="space-between" maxW="900px" m="auto">
+      <Flex
+        align="center"
+        justify="space-between"
+        w="full"
+        maxW="900px"
+        m="auto"
+      >
         <Logo />
         <Flex gap={5} display={{ base: "none", md: "flex" }}>
           <Text cursor="pointer" color={useColorModeValue("dark", "light")}>
@@ -34,31 +36,13 @@ export default function Navbar() {
             Contact
           </Text>
         </Flex>
-        <Flex>
-          <IconButton
-            variant="ghost"
-            color={useColorModeValue("dark", "light")}
-            size="lg"
-            _hover={{ color: "accent.base" }}
-            icon={<FaFacebook />}
-          />
-          <IconButton
-            variant="ghost"
-            color={useColorModeValue("dark", "light")}
-            size="lg"
-            _hover={{ color: "accent.base" }}
-            icon={<FaLinkedin />}
-          />
-          <IconButton
-            variant="ghost"
-            color={useColorModeValue("dark", "light")}
-            size="lg"
-            _hover={{ color: "accent.base" }}
-            icon={<FaGithub />}
-          />
+        <Flex gap={5} align="center">
+          <Icon cursor="pointer" as={FaFacebook} />
+          <Icon cursor="pointer" as={FaLinkedin} />
+          <Icon cursor="pointer" as={FaGithub} />
           <DarkModeToggle />
         </Flex>
       </Flex>
-    </Box>
+    </Flex>
   );
 }

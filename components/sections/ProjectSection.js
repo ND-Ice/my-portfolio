@@ -5,7 +5,7 @@ import ProjectCard from "../card/ProjectCard";
 
 export default function ProjectSection() {
   return (
-    <Box minH="100vh" py={10}>
+    <Box minH="100vh" py={10} mt={20}>
       <Box maxW="900px" m="auto">
         <Heading
           fontWeight="extrabold"
@@ -20,7 +20,7 @@ export default function ProjectSection() {
         <Box
           display="grid"
           gridTemplateColumns={{ md: "repeat(2,1fr)" }}
-          gap={5}
+          gap={10}
           mt={10}
         >
           {projects &&

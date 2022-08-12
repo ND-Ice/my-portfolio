@@ -1,15 +1,14 @@
-import { IconButton, useColorModeValue, useColorMode } from "@chakra-ui/react";
+import { useColorModeValue, useColorMode, Icon } from "@chakra-ui/react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function DarkModeToggle() {
   const { toggleColorMode } = useColorMode();
   return (
-    <IconButton
+    <Icon
       onClick={toggleColorMode}
-      variant="ghost"
-      size="lg"
+      cursor="pointer"
       color={useColorModeValue("purple", "orange")}
-      icon={useColorModeValue(<FaMoon />, <FaSun />)}
+      as={useColorModeValue(FaMoon, FaSun)}
       _hover={{ bg: undefined }}
       _active={{ bg: undefined }}
     />

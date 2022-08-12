@@ -10,7 +10,7 @@ import {
 
 export default function HomeSection() {
   return (
-    <Box p={10} display="grid" placeItems="center" minH="90vh">
+    <Box display="grid" placeItems="center" minH="90vh">
       <Box textAlign="center">
         <Heading
           fontSize="6xl"

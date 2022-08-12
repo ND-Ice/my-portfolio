@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
   } = project;
 
   return (
-    <Box p={5} borderRadius="md" h="max-content">
+    <Box borderRadius="md" h="max-content">
       {projectImageBanner && (
         <Box
           w="full"

@@ -4,12 +4,17 @@ export default function Logo() {
   return (
     <Box>
       <Heading
-        size="md"
+        size="sm"
         textTransform="uppercase"
         letterSpacing={1}
+        lineHeight={0.5}
         color={useColorModeValue("dark", "light")}
       >
-        Joshua
+        code with
+        <Text as="span" color="accent.base">
+          {" "}
+          josh
+        </Text>
       </Heading>
       <Text
         fontSize="sm"

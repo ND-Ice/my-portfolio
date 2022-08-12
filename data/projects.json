@@ -6,7 +6,12 @@
     "category": "Front-End",
     "toolsUsed": ["HTML", "CSS", "JavaScript"],
     "projectImageBanner": "/images/project-image/loop-studios-landing-page.png",
-    "projectImages": [],
+    "projectImages": [
+      "/images/loop-studios-asset/1.png",
+      "/images/loop-studios-asset/2.png",
+      "/images/loop-studios-asset/3.png",
+      "/images/loop-studios-asset/4.png"
+    ],
     "github-link": "https://github.com/ND-Ice/frontend-mentor.loopstudios-landing-page.github.io",
     "live-link": "https://nd-ice.github.io/frontend-mentor.loopstudios-landing-page.github.io"
   },
@@ -17,7 +22,12 @@
     "category": "Front-End",
     "toolsUsed": ["HTML", "CSS", "JavaScript", "Animate on Scroll"],
     "projectImageBanner": "/images/project-image/chirp-landing-page.png",
-    "projectImages": [],
+    "projectImages": [
+      "/images/chirp-asset/1.png",
+      "/images/chirp-asset/2.png",
+      "/images/chirp-asset/3.png",
+      "/images/chirp-asset/4.png"
+    ],
     "github-link": "https://github.com/ND-Ice/codewell.cc.chirp-landing-page",
     "live-link": "https://nd-ice.github.io/codewell.cc.chirp-landing-page"
   },
@@ -28,9 +38,15 @@
     "category": "Front-End",
     "toolsUsed": ["HTML", "CSS", "JavaScript"],
     "projectImageBanner": "/images/project-image/blogr-landing-page.png",
-    "projectImages": [],
-    "github-link": "https://nd-ice.github.io/nd-ice-front-end-mentor.blogr-landing-page.github.io",
-    "live-link": "https://github.com/ND-Ice/nd-ice-front-end-mentor.blogr-landing-page.github.io"
+    "projectImages": [
+      "/images/blogr-asset/1.png",
+      "/images/blogr-asset/3.png",
+      "/images/blogr-asset/2.png",
+      "/images/blogr-asset/4.png",
+      "/images/blogr-asset/5.png"
+    ],
+    "github-link": "https://github.com/ND-Ice/nd-ice-front-end-mentor.blogr-landing-page.github.io",
+    "live-link": "https://nd-ice.github.io/nd-ice-front-end-mentor.blogr-landing-page.github.io"
   },
   {
     "id": 4,
@@ -39,7 +55,14 @@
     "category": "Front-End",
     "toolsUsed": ["HTML", "CSS", "JavaScript", "Animate on Scroll"],
     "projectImageBanner": "/images/project-image/sunnyside-landing-page.png",
-    "projectImages": [],
+    "projectImages": [
+      "/images/sunnyside-asset/1.png",
+      "/images/sunnyside-asset/3.png",
+      "/images/sunnyside-asset/2.png",
+      "/images/sunnyside-asset/4.png",
+      "/images/sunnyside-asset/5.png",
+      "/images/sunnyside-asset/6.png"
+    ],
     "github-link": "https://github.com/ND-Ice/nd-ice.sunnyside-agency-landing-page-front-end-mentor.github.io",
     "live-link": "https://nd-ice.github.io/nd-ice.sunnyside-agency-landing-page-front-end-mentor.github.io"
   },
@@ -50,7 +73,13 @@
     "category": "Front-End",
     "toolsUsed": ["Next Js", "Chakra UI", "Next Auth", "Sanity"],
     "projectImageBanner": "/images/project-image/tribubo-banner.png",
-    "projectImages": [],
+    "projectImages": [
+      "/images/tribubo-asset/1.png",
+      "/images/tribubo-asset/3.png",
+      "/images/tribubo-asset/2.png",
+      "/images/tribubo-asset/4.png",
+      "/images/tribubo-asset/5.png"
+    ],
     "github-link": "https://github.com/ND-Ice/trave-blog"
   },
   {
@@ -60,7 +89,12 @@
     "category": "Front-End",
     "toolsUsed": ["React Js", "Styled-Components", "External API"],
     "projectImageBanner": "/images/project-image/foodie-banner.png",
-    "projectImages": [],
+    "projectImages": [
+      "/images/foodie-asset/1.png",
+      "/images/foodie-asset/3.png",
+      "/images/foodie-asset/2.png",
+      "/images/foodie-asset/4.png"
+    ],
     "github-link": "https://github.com/ND-Ice/foodie"
   },
   {
@@ -70,7 +104,12 @@
     "category": "Front-End",
     "toolsUsed": ["Next Js", "Chakra UI", "External API"],
     "projectImageBanner": "/images/project-image/movie-matters-banner.png",
-    "projectImages": [],
+    "projectImages": [
+      "/images/movie-matters-asset/1.png",
+      "/images/movie-matters-asset/3.png",
+      "/images/movie-matters-asset/2.png",
+      "/images/movie-matters-asset/4.png"
+    ],
     "github-link": "https://github.com/ND-Ice/movie-matters",
     "live-link": "https://movie-matters.vercel.app"
   },
@@ -81,12 +120,17 @@
     "category": "FullStack",
     "toolsUsed": ["React Js", "CSS Modules", "Node Js", "Express", "Heroku"],
     "projectImageBanner": "/images/project-image/finder-banner.png",
-    "projectImages": [],
+    "projectImages": [
+      "/images/finder-asset/1.png",
+      "/images/finder-asset/3.png",
+      "/images/finder-asset/2.png",
+      "/images/finder-asset/4.png"
+    ],
     "github-link": "https://github.com/ND-Ice/finder"
   },
 
   {
-    "id": 8,
+    "id": 9,
     "projectTitle": "E-IPCR",
     "projectDescription": "A web-app project and school requirement and my Thesis, the goal of this project is to automate the process of the Individual Performance Commitment Review (IPCR) Evaluation on the College of Arts and Sciences.",
     "category": "FullStack",
@@ -100,7 +144,14 @@
       "Heroku"
     ],
     "projectImageBanner": "/images/project-image/e-ipcr-banner.png",
-    "projectImages": [],
-    "github-link": "https://github.com/ND-Ice/e-ipcr-client"
+    "projectImages": [
+      "/images/e-ipcr-asset/1.png",
+      "/images/e-ipcr-asset/3.png",
+      "/images/e-ipcr-asset/2.png",
+      "/images/e-ipcr-asset/4.png",
+      "/images/e-ipcr-asset/5.png"
+    ],
+    "github-link": "https://github.com/ND-Ice/e-ipcr-client",
+    "live-link": "https://e-ipcr-faculty.herokuapp.com"
   }
 ]
