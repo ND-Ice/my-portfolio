@@ -17,7 +17,12 @@ export default function ProjectSection() {
           MY PROJECTS
         </Heading>
 
-        <Box display="grid" gridTemplateColumns="repeat(2,1fr)" gap={5} mt={10}>
+        <Box
+          display="grid"
+          gridTemplateColumns={{ md: "repeat(2,1fr)" }}
+          gap={5}
+          mt={10}
+        >
           {projects &&
             projects.map((project) => (
               <ProjectCard key={project.id} project={project} />

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "projectTitle": "Loops Studios Landing Page",
-    "projectDescription": "A Front-End Mentor challenge which is transform a UI/UX design into code using their provided starter kit.",
+    "projectDescription": "A Front-End Mentor challenge which transforms a UI/UX design into code using their provided starter kit.",
     "category": "Front-End",
     "toolsUsed": ["HTML", "CSS", "JavaScript"],
     "projectImageBanner": "/images/project-image/loop-studios-landing-page.png",

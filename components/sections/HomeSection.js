@@ -5,6 +5,7 @@ import {
   Flex,
   Button,
   useColorModeValue,
+  Divider,
 } from "@chakra-ui/react";
 
 export default function HomeSection() {
@@ -14,23 +15,27 @@ export default function HomeSection() {
         <Heading
           fontSize="6xl"
           textTransform="uppercase"
+          fontWeight="extrabold"
           color={useColorModeValue("dark", "light")}
         >
-          Joshua Dela Cruz
-        </Heading>
-        <Text fontSize="2xl" color={useColorModeValue("dark", "light")}>
-          Aspiring Front-End Developer |
-          <Text ml={1} as="span" color="accent.base">
-            INTERN
+          <Text as="span" color="accent.base">
+            Joshua{" "}
           </Text>
+          Dela Cruz
+        </Heading>
+        <Divider my={2} />
+        <Text fontSize="xl" maxW="60ch" m="auto">
+          A 22 years old passionate and aspiring{" "}
+          <Text as="span" color="accent.base" textTransform="uppercase">
+            Front-End Developer
+          </Text>{" "}
+          based in San Juan City Metro Manila Philippines
         </Text>
-        <Flex gap={2} mt={5} justify="center">
-          <Button bg="red.500" color="white">
-            Me
-          </Button>
-          <Button bg="red.500" color="white">
-            My Projects
-          </Button>
+        <Divider my={5} />
+        <Flex gap={2} mt={5} justify="center" flexWrap="wrap">
+          <Button>Me</Button>
+          <Button>My Projects</Button>
+          <Button>Connect with Me</Button>
         </Flex>
       </Box>
     </Box>

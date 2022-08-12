@@ -6,8 +6,8 @@ import TechStackCard from "../card/TechStackCard";
 
 export default function ProfileSection() {
   return (
-    <Box py={10}>
-      <Box maxW="900px" m="auto">
+    <Box py={10} px={5}>
+      <Box maxW={{ md: "900px" }} m="auto">
         <Heading
           fontWeight="extrabold"
           size="2xl"
@@ -20,7 +20,7 @@ export default function ProfileSection() {
         </Heading>
         <Text
           fontSize="2xl"
-          textAlign="justify"
+          textAlign={{ base: "center", md: "justify" }}
           color={useColorModeValue("dark", "light")}
         >
           Hi, I am
@@ -44,7 +44,7 @@ export default function ProfileSection() {
           engineer.
         </Text>
 
-        <Flex gap={20} mt={10}>
+        <Flex direction={{ base: "column", md: "row" }} gap={20} mt={10}>
           <Box>
             <Heading
               fontWeight="extrabold"
@@ -83,7 +83,15 @@ export default function ProfileSection() {
             >
               MY TOOLS
             </Heading>
-            <Box gap={2} display="grid" gridTemplateColumns="repeat(5,1fr)">
+            <Box
+              gap={2}
+              display="grid"
+              justifyItems="center"
+              gridTemplateColumns={{
+                base: "repeat(4,1fr)",
+                md: "repeat(5,1fr)",
+              }}
+            >
               {techStacks.map((stack) => (
                 <TechStackCard
                   key={stack.id}

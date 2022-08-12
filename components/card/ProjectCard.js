@@ -30,6 +30,7 @@ export default function ProjectCard({ project }) {
           mb={5}
           borderRadius={5}
           overflow="hidden"
+          borderWidth={1}
         >
           <Image
             src={projectImageBanner}

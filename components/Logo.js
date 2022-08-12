@@ -9,12 +9,13 @@ export default function Logo() {
         letterSpacing={1}
         color={useColorModeValue("dark", "light")}
       >
-        HIRE ME
+        Joshua
       </Heading>
       <Text
         fontSize="sm"
         letterSpacing={1}
         textTransform="uppercase"
+        display={{ base: "none", md: "inline-block" }}
         color={useColorModeValue("dark", "light")}
       >
         Front End Developer

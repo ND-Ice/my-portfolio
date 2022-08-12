@@ -19,10 +19,11 @@ export default function Navbar() {
       p={5}
       backdropFilter="blur(10px)"
       zIndex={1000}
+      shadow="sm"
     >
       <Flex align="center" justify="space-between" maxW="900px" m="auto">
         <Logo />
-        <Flex gap={5}>
+        <Flex gap={5} display={{ base: "none", md: "flex" }}>
           <Text cursor="pointer" color={useColorModeValue("dark", "light")}>
             About
           </Text>
