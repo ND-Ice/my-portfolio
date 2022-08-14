@@ -1,9 +1,12 @@
-import NextLink from "next/link";
+import { useRouter } from "next/router";
 import { Box, Button } from "@chakra-ui/react";
 import Head from "next/head";
 import Footer from "../footer";
 
 export default function ProjectDetailsLayout({ children, title }) {
+  const router = useRouter();
+
+  const handleGoBack = () => router.back();
   return (
     <>
       <Head>
@@ -13,9 +16,7 @@ export default function ProjectDetailsLayout({ children, title }) {
       </Head>
       <Box as="main" maxW="900px" m="auto" py={10} px={5}>
         <Box mb={10}>
-          <NextLink href="/">
-            <Button>Go Back</Button>
-          </NextLink>
+          <Button onClick={handleGoBack}>Go Back</Button>
         </Box>
         {children}
       </Box>

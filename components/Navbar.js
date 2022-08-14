@@ -1,8 +1,9 @@
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
-import { Box, Flex, Icon, Text, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 
 import Logo from "./Logo";
 import DarkModeToggle from "./DarkModeToggle";
+import Navlink from "./Navlink";
 
 export default function Navbar() {
   return (
@@ -26,15 +27,9 @@ export default function Navbar() {
       >
         <Logo />
         <Flex gap={5} display={{ base: "none", md: "flex" }}>
-          <Text cursor="pointer" color={useColorModeValue("dark", "light")}>
-            About
-          </Text>
-          <Text cursor="pointer" color={useColorModeValue("dark", "light")}>
-            Projects
-          </Text>
-          <Text cursor="pointer" color={useColorModeValue("dark", "light")}>
-            Contact
-          </Text>
+          <Navlink to="about">About</Navlink>
+          <Navlink to="projects">Projects</Navlink>
+          <Navlink to="contact">Contact</Navlink>
         </Flex>
         <Flex gap={5} align="center">
           <Icon cursor="pointer" as={FaFacebook} />

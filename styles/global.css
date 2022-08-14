@@ -1,0 +1,8 @@
+.nav-link {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.active {
+  color: #ef4444;
+}

@@ -16,8 +16,6 @@ export default function ProjectDetails() {
     [id]
   );
 
-  console.log(selectedProject);
-
   return (
     <ProjectDetailsLayout title={selectedProject?.projectTitle}>
       <Box minH="100vh">
