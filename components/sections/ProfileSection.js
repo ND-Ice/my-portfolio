@@ -6,7 +6,7 @@ import TechStackCard from "../card/TechStackCard";
 
 export default function ProfileSection() {
   return (
-    <Box mt={20} id="about">
+    <Box mt={20} id="about" px={5}>
       <Box maxW={{ md: "900px" }} m="auto">
         <Heading
           fontWeight="extrabold"

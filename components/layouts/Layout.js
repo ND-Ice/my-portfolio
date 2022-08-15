@@ -13,9 +13,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <Box as="main" px={5} py={10}>
-        {children}
-      </Box>
+      <Box as="main">{children}</Box>
       <Footer />
     </>
   );

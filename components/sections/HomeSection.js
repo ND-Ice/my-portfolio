@@ -10,12 +10,13 @@ import {
 
 export default function HomeSection() {
   return (
-    <Box display="grid" placeItems="center" minH="90vh">
+    <Box display="grid" placeItems="center" minH="90vh" px={5}>
       <Box textAlign="center">
         <Heading
           fontSize="6xl"
           textTransform="uppercase"
           fontWeight="extrabold"
+          lineHeight={1}
           color={useColorModeValue("dark", "light")}
         >
           <Text as="span" color="accent.base">
@@ -23,7 +24,7 @@ export default function HomeSection() {
           </Text>
           Dela Cruz
         </Heading>
-        <Divider my={2} />
+        <Divider my={5} />
         <Text fontSize="xl" maxW="60ch" m="auto">
           A 22 years old passionate and aspiring{" "}
           <Text as="span" color="accent.base" textTransform="uppercase">
