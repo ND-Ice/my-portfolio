@@ -8,6 +8,8 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
+import Navlink from "../Navlink";
+
 export default function HomeSection() {
   return (
     <Box display="grid" placeItems="center" minH="90vh" px={5}>
@@ -34,9 +36,15 @@ export default function HomeSection() {
         </Text>
         <Divider my={5} />
         <Flex gap={2} mt={5} justify="center" flexWrap="wrap">
-          <Button>Me</Button>
-          <Button>My Projects</Button>
-          <Button>Connect with Me</Button>
+          <Navlink to="about">
+            <Button>Me</Button>
+          </Navlink>
+          <Navlink to="projects">
+            <Button>My Projects</Button>
+          </Navlink>
+          <Navlink to="contact">
+            <Button>Connect with Me</Button>
+          </Navlink>
         </Flex>
       </Box>
     </Box>
