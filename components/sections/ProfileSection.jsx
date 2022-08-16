@@ -1,8 +1,7 @@
 import { Box, Flex, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 
-import EducationCard from "../card/EducationCard";
-import techStacks from "../../data/techStack.json";
-import TechStackCard from "../card/TechStackCard";
+import techStacks from "@data/techStack.json";
+import { EducationCard, TechStackCard } from "@components/cards";
 
 export default function ProfileSection() {
   return (

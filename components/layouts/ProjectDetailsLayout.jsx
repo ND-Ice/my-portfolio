@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { Box, Button } from "@chakra-ui/react";
 import Head from "next/head";
-import Footer from "../footer";
+
+import Footer from "@components/Footer";
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },

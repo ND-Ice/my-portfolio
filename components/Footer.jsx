@@ -1,6 +1,6 @@
 import { Box, Flex, Icon, Text } from "@chakra-ui/react";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
-import Logo from "../Logo";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (

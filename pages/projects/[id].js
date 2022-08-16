@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 import { useMemo } from "react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
-import ProjectDetailsLayout from "../../components/layouts/ProjectDetailsLayout";
-import projects from "../../data/projects.json";
+import ProjectDetailsLayout from "@components/layouts/ProjectDetailsLayout";
+import projects from "@data/projects.json";
 
 export default function ProjectDetails() {
   const router = useRouter();

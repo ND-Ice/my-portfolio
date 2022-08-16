@@ -1,8 +1,10 @@
-import Layout from "../components/layouts/Layout";
-import ContactSection from "../components/sections/ContactSection";
-import HomeSection from "../components/sections/HomeSection";
-import ProfileSection from "../components/sections/ProfileSection";
-import ProjectSection from "../components/sections/ProjectSection";
+import Layout from "@components/layouts/Layout";
+import {
+  HomeSection,
+  ProfileSection,
+  ProjectSection,
+  ContactSection,
+} from "@components/sections";
 
 export default function Home() {
   return (

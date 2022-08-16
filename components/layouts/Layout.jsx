@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
 
-import Navbar from "../Navbar";
-import Footer from "../footer";
+import Navbar from "@components/Navbar";
+import Footer from "@components/Footer";
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },

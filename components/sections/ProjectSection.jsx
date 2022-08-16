@@ -1,7 +1,7 @@
 import { Box, Heading } from "@chakra-ui/react";
 
-import projects from "../../data/projects.json";
-import ProjectCard from "../card/ProjectCard";
+import projects from "@data/projects.json";
+import ProjectCard from "@components/cards/ProjectCard";
 
 export default function ProjectSection() {
   return (

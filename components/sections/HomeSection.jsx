@@ -8,7 +8,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
-import Navlink from "../Navlink";
+import Navlink from "@components/Navlink";
 
 export default function HomeSection() {
   return (

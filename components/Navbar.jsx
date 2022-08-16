@@ -13,9 +13,9 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import Logo from "./Logo";
-import DarkModeToggle from "./DarkModeToggle";
-import Navlink from "./Navlink";
+import Logo from "@components/Logo";
+import DarkModeToggle from "@components/DarkModeToggle";
+import Navlink from "@components/Navlink";
 
 export default function Navbar() {
   return (
@@ -31,11 +31,11 @@ export default function Navbar() {
       px={5}
     >
       <Flex
-        align="center"
-        justify="space-between"
         w="full"
         maxW="900px"
         m="auto"
+        align="center"
+        justify="space-between"
       >
         <Logo />
         <Flex gap={5} display={{ base: "none", md: "flex" }}>
@@ -45,29 +45,17 @@ export default function Navbar() {
         </Flex>
         <Flex gap={5} align="center">
           <Flex gap={5} display={{ base: "none", md: "flex" }}>
-            <Link
-              target="_blank"
-              lineHeight={0}
-              href="https://www.facebook.com/profile.php?id=100029689120875"
-            >
+            <LinkWrapper href="https://www.facebook.com/profile.php?id=100029689120875">
               <Icon cursor="pointer" as={FaFacebook} />
-            </Link>
+            </LinkWrapper>
 
-            <Link
-              target="_blank"
-              lineHeight={0}
-              href="https://www.linkedin.com/in/joshua-dela-cruz-6921a2158/"
-            >
+            <LinkWrapper href="https://www.linkedin.com/in/joshua-dela-cruz-6921a2158/">
               <Icon cursor="pointer" as={FaLinkedin} />
-            </Link>
+            </LinkWrapper>
 
-            <Link
-              target="_blank"
-              lineHeight={0}
-              href="https://github.com/ND-Ice"
-            >
+            <LinkWrapper href="https://github.com/ND-Ice">
               <Icon cursor="pointer" as={FaGithub} />
-            </Link>
+            </LinkWrapper>
           </Flex>
 
           <DarkModeToggle />
@@ -91,26 +79,28 @@ export default function Navbar() {
                   <MenuItem>Contact</MenuItem>
                 </Navlink>
                 <MenuDivider />
-                <Link
-                  target="_blank"
-                  href="https://www.facebook.com/profile.php?id=100029689120875"
-                >
+                <LinkWrapper href="https://www.facebook.com/profile.php?id=100029689120875">
                   <MenuItem icon={<FaFacebook />}>Facebook</MenuItem>
-                </Link>
-                <Link target="_blank" href="https://github.com/ND-Ice">
+                </LinkWrapper>
+                <LinkWrapper href="https://github.com/ND-Ice">
                   <MenuItem icon={<FaGithub />}>Github</MenuItem>
-                </Link>
-                <Link
-                  target="_blank"
-                  href="https://www.linkedin.com/in/joshua-dela-cruz-6921a2158/"
-                >
+                </LinkWrapper>
+                <LinkWrapper href="https://www.linkedin.com/in/joshua-dela-cruz-6921a2158/">
                   <MenuItem icon={<FaLinkedin />}>LinkedIn</MenuItem>
-                </Link>
+                </LinkWrapper>
               </MenuList>
             </Menu>
           </Box>
         </Flex>
       </Flex>
     </Flex>
+  );
+}
+
+function LinkWrapper({ href, children }) {
+  return (
+    <Link href={href} target="_blank" lineHeight={0}>
+      {children}
+    </Link>
   );
 }

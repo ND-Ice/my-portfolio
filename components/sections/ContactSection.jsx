@@ -21,7 +21,7 @@ export default function ContactSection() {
         >
           My Contact
         </Heading>
-        <Text mt={5} fontSize="2xl">
+        <Text mt={5} fontSize={["lg", "2xl"]}>
           Wanna get in touch?
         </Text>
         <Box w="full" mt={10}>
@@ -34,10 +34,18 @@ export default function ContactSection() {
           >
             Email Address
           </Heading>
-          <Text fontSize="2xl" letterSpacing={1} wordBreak="break-all">
+          <Text
+            fontSize={["lg", "2xl"]}
+            letterSpacing={1}
+            wordBreak="break-all"
+          >
             delacruzjoshua691@gmail.com
           </Text>
-          <Text fontSize="2xl" letterSpacing={1} wordBreak="break-all">
+          <Text
+            fontSize={["lg", "2xl"]}
+            letterSpacing={1}
+            wordBreak="break-all"
+          >
             delacruz.joshua.bscs@gmail.com
           </Text>
           <Divider my={5} />
@@ -52,7 +60,7 @@ export default function ContactSection() {
           >
             Contact Number
           </Heading>
-          <Text textTransform="uppercase" fontSize="2xl">
+          <Text textTransform="uppercase" fontSize={["lg", "2xl"]}>
             +63 966 204 8118
           </Text>
 
