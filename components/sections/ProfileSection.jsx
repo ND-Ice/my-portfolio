@@ -1,6 +1,5 @@
 import { Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
 
-// import techStacks from "@data/techStack.json";
 import { EducationCard, TechStackCard } from "@components/cards";
 import { BigHeading, SecondaryHeading } from "@components/Headings";
 

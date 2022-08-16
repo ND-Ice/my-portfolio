@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Flex, Button, Divider } from "@chakra-ui/react";
+import { Box, Text, Flex, Button, Divider } from "@chakra-ui/react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 import LinkWrapper from "@components/LinkWrapper";
