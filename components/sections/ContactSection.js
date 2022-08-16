@@ -1,4 +1,12 @@
-import { Box, Heading, Text, Flex, Button, Divider } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  Flex,
+  Button,
+  Divider,
+  Link,
+} from "@chakra-ui/react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function ContactSection() {
@@ -51,9 +59,21 @@ export default function ContactSection() {
           <Divider my={5} />
 
           <Flex gap={2} mt={5} justify="center" flexWrap="wrap">
-            <Button leftIcon={<FaFacebook />}>Facebook</Button>
-            <Button leftIcon={<FaGithub />}>Github</Button>
-            <Button leftIcon={<FaLinkedin />}>LinkedIn</Button>
+            <Link
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100029689120875"
+            >
+              <Button leftIcon={<FaFacebook />}>Facebook</Button>
+            </Link>
+            <Link target="_blank" href="https://github.com/ND-Ice">
+              <Button leftIcon={<FaGithub />}>Github</Button>
+            </Link>
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/joshua-dela-cruz-6921a2158/"
+            >
+              <Button leftIcon={<FaLinkedin />}>LinkedIn</Button>
+            </Link>
           </Flex>
         </Box>
       </Box>

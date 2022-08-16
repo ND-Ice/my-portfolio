@@ -56,7 +56,7 @@ export default function Navbar() {
             <Link
               target="_blank"
               lineHeight={0}
-              href="https://github.com/ND-Ice"
+              href="https://www.linkedin.com/in/joshua-dela-cruz-6921a2158/"
             >
               <Icon cursor="pointer" as={FaLinkedin} />
             </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
             <Link
               target="_blank"
               lineHeight={0}
-              href="https://www.linkedin.com/in/joshua-dela-cruz-6921a2158/"
+              href="https://github.com/ND-Ice"
             >
               <Icon cursor="pointer" as={FaGithub} />
             </Link>
