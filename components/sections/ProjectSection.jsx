@@ -1,22 +1,14 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 import projects from "@data/projects.json";
 import ProjectCard from "@components/cards/ProjectCard";
+import { BigHeading } from "@components/Headings";
 
 export default function ProjectSection() {
   return (
     <Box minH="100vh" mt={20} id="projects" px={5}>
       <Box maxW="900px" m="auto">
-        <Heading
-          fontWeight="extrabold"
-          textAlign="center"
-          size="2xl"
-          color="accent.base"
-          letterSpacing={1}
-        >
-          MY PROJECTS
-        </Heading>
-
+        <BigHeading>MY PROJECTS</BigHeading>
         <Box
           display="grid"
           gridTemplateColumns={{ md: "repeat(2,1fr)" }}

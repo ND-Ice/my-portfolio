@@ -1,22 +1,14 @@
-import { Box, Flex, Heading, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
 
 import techStacks from "@data/techStack.json";
 import { EducationCard, TechStackCard } from "@components/cards";
+import { BigHeading, SecondaryHeading } from "@components/Headings";
 
 export default function ProfileSection() {
   return (
     <Box mt={20} id="about" px={5}>
       <Box maxW={{ md: "900px" }} m="auto">
-        <Heading
-          fontWeight="extrabold"
-          size="2xl"
-          letterSpacing={1}
-          color="accent.base"
-          textAlign="center"
-          mb={5}
-        >
-          MY PROFILE
-        </Heading>
+        <BigHeading>MY PROFILE</BigHeading>
         <Text
           fontSize="2xl"
           textAlign={{ base: "center", md: "justify" }}
@@ -45,16 +37,7 @@ export default function ProfileSection() {
 
         <Flex direction={{ base: "column", lg: "row" }} gap={20} mt={10}>
           <Box>
-            <Heading
-              fontWeight="extrabold"
-              textAlign="center"
-              size="lg"
-              letterSpacing={1}
-              color="accent.base"
-              mb={10}
-            >
-              MY EDUCATION
-            </Heading>
+            <SecondaryHeading>MY EDUCATION</SecondaryHeading>
             <EducationCard
               schoolYear="2018-2022"
               schoolName='Eulogio "Amang" Rodriguez Institute of Science and Technology'
@@ -72,16 +55,7 @@ export default function ProfileSection() {
             />
           </Box>
           <Box>
-            <Heading
-              fontWeight="extrabold"
-              size="lg"
-              letterSpacing={1}
-              color="accent.base"
-              textAlign="center"
-              mb={10}
-            >
-              MY TOOLS
-            </Heading>
+            <SecondaryHeading>MY TOOLS</SecondaryHeading>
             <Box
               gap={[2, 5]}
               display="grid"

@@ -4,7 +4,6 @@ import {
   Flex,
   Icon,
   IconButton,
-  Link,
   Menu,
   MenuButton,
   MenuDivider,
@@ -16,6 +15,7 @@ import {
 import Logo from "@components/Logo";
 import DarkModeToggle from "@components/DarkModeToggle";
 import Navlink from "@components/Navlink";
+import LinkWrapper from "@components/LinkWrapper";
 
 export default function Navbar() {
   return (
@@ -94,13 +94,5 @@ export default function Navbar() {
         </Flex>
       </Flex>
     </Flex>
-  );
-}
-
-function LinkWrapper({ href, children }) {
-  return (
-    <Link href={href} target="_blank" lineHeight={0}>
-      {children}
-    </Link>
   );
 }
