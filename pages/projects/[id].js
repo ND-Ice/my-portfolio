@@ -1,21 +1,10 @@
 import Image from "next/image";
 import { Box, Button, Flex, Heading, Text, Link } from "@chakra-ui/react";
-import { useRouter } from "next/router";
-import { useMemo } from "react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 
 import ProjectDetailsLayout from "@components/layouts/ProjectDetailsLayout";
-import projects from "@data/projects.json";
 
-export default function ProjectDetails() {
-  const router = useRouter();
-  const { id } = router.query;
-
-  const selectedProject = useMemo(
-    () => projects.find((project) => project.id === parseInt(id)),
-    [id]
-  );
-
+export default function ProjectDetails({ selectedProject }) {
   return (
     <ProjectDetailsLayout title={selectedProject?.projectTitle}>
       <Box minH="100vh">
@@ -70,3 +59,27 @@ export default function ProjectDetails() {
     </ProjectDetailsLayout>
   );
 }
+
+export const getStaticProps = async (context) => {
+  const { params } = context;
+  const { id } = params;
+
+  const projects = (await import("@data/projects.json")).default;
+  const selectedProject = projects.find(
+    (project) => project.id === parseInt(id)
+  );
+
+  return { props: { selectedProject } };
+};
+
+export const getStaticPaths = async () => {
+  const projects = (await import("@data/projects.json")).default;
+  const paths = projects.map((project) => ({
+    params: { id: project.id.toString() },
+  }));
+
+  return {
+    paths: paths,
+    fallback: false,
+  };
+};

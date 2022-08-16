@@ -6,13 +6,20 @@ import {
   ContactSection,
 } from "@components/sections";
 
-export default function Home() {
+export default function Home({ techStacks, projects }) {
   return (
     <Layout>
       <HomeSection />
-      <ProfileSection />
-      <ProjectSection />
+      <ProfileSection techStacks={techStacks} />
+      <ProjectSection projects={projects} />
       <ContactSection />
     </Layout>
   );
 }
+
+export const getStaticProps = async () => {
+  const techStacks = (await import("@data/techStack.json")).default;
+  const projects = (await import("@data/projects.json")).default;
+
+  return { props: { techStacks, projects } };
+};

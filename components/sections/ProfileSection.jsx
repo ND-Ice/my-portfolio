@@ -1,10 +1,10 @@
 import { Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
 
-import techStacks from "@data/techStack.json";
+// import techStacks from "@data/techStack.json";
 import { EducationCard, TechStackCard } from "@components/cards";
 import { BigHeading, SecondaryHeading } from "@components/Headings";
 
-export default function ProfileSection() {
+export default function ProfileSection({ techStacks }) {
   return (
     <Box mt={20} id="about" px={5}>
       <Box maxW={{ md: "900px" }} m="auto">
